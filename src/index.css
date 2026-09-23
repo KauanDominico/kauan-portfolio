@@ -1,0 +1,41 @@
+@import "./styles/variables.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-family: var(--font-primary);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+#root {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  html,
+  body,
+  #root {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  main {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+}

@@ -1,0 +1,138 @@
+.projects {
+  width: 100%;
+  padding: 8rem 2rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.projects__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects__header {
+  margin-bottom: 4rem;
+}
+
+.projects__eyebrow {
+  margin-bottom: 1rem;
+
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.projects__title {
+  width: 100%;
+  max-width: 700px;
+
+  color: var(--color-text);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  overflow-wrap: break-word;
+}
+
+.projects__list {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  min-width: 0;
+  padding: 2rem;
+
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: #404040;
+}
+
+.project-card__category {
+  margin-bottom: 1rem;
+
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  overflow-wrap: break-word;
+}
+
+.project-card__title {
+  margin-bottom: 1rem;
+
+  color: var(--color-text);
+  font-size: 1.5rem;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+}
+
+.project-card__description {
+  margin-bottom: 1.5rem;
+
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  overflow-wrap: break-word;
+}
+
+.project-card__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-card__skills span {
+  max-width: 100%;
+  padding: 0.4rem 0.65rem;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    width: 100%;
+    padding: 5rem 1.25rem;
+  }
+
+  .projects__container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .projects__header {
+    margin-bottom: 3rem;
+  }
+
+  .projects__title {
+    max-width: 100%;
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  .projects__list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .project-card {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}
