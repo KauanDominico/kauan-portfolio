@@ -1,121 +1,231 @@
 .contact {
+  position: relative;
+
   width: 100%;
+
   padding: 9rem 2rem;
+
+  background: var(--color-bg);
+
   border-top: 1px solid var(--color-border);
+
+  overflow: hidden;
+}
+
+.contact::before {
+  content: '';
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  right: -250px;
+  top: -250px;
+
+  background: var(--color-primary);
+
+  opacity: 0.06;
+
+  border-radius: 50%;
+
+  filter: blur(20px);
+
+  pointer-events: none;
 }
 
 .contact__container {
+  position: relative;
+
+  z-index: 1;
+
   width: 100%;
   max-width: 1200px;
+
   margin: 0 auto;
 }
 
-.contact__header {
-  width: 100%;
-  max-width: 760px;
-}
-
 .contact__eyebrow {
-  margin-bottom: 1.25rem;
+  display: flex;
 
-  color: var(--color-text-muted);
-  font-size: 0.8rem;
+  align-items: center;
+
+  gap: 0.75rem;
+
+  margin-bottom: 3rem;
+
+  color: var(--color-primary-light);
+
+  font-size: 0.75rem;
   font-weight: 600;
+
   text-transform: uppercase;
   letter-spacing: 0.18em;
 }
 
+.contact__eyebrow span {
+  width: 28px;
+  height: 1px;
+
+  background: var(--color-primary);
+}
+
+.contact__content {
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) 280px;
+
+  gap: 5rem;
+
+  align-items: end;
+}
+
+.contact__main {
+  max-width: 850px;
+}
+
 .contact__title {
-  width: 100%;
-  margin-bottom: 1.75rem;
+  margin: 0 0 2rem;
 
   color: var(--color-text);
-  font-size: clamp(3.5rem, 8vw, 6rem);
-  line-height: 0.92;
-  letter-spacing: -0.05em;
-  overflow-wrap: break-word;
+
+  font-size: clamp(3rem, 6vw, 6rem);
+
+  line-height: 0.95;
+
+  letter-spacing: -0.055em;
+}
+
+.contact__title span {
+  color: var(--color-primary-light);
 }
 
 .contact__description {
-  width: 100%;
-  max-width: 620px;
+  max-width: 650px;
+
+  margin: 0;
 
   color: var(--color-text-muted);
+
   font-size: 1.05rem;
+
   line-height: 1.8;
-  overflow-wrap: break-word;
+}
+
+.contact__actions {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2rem;
+}
+
+.contact__button {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  width: 100%;
+
+  padding: 1.1rem 1.25rem;
+
+  text-decoration: none;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  border-radius: var(--radius-sm);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.contact__button--primary {
+  color: var(--color-text);
+
+  background: var(--color-primary);
+
+  border: 1px solid var(--color-primary);
+}
+
+.contact__button--primary:hover {
+  transform: translateY(-3px);
+
+  background: var(--color-primary-light);
+
+  border-color: var(--color-primary-light);
+}
+
+.contact__button span {
+  font-size: 1.2rem;
 }
 
 .contact__links {
-  width: 100%;
-
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
 
-  margin-top: 3rem;
+  flex-direction: column;
+
+  gap: 0;
 }
 
 .contact__links a {
-  display: inline-flex;
+  display: flex;
+
   align-items: center;
-  justify-content: center;
 
-  min-width: 120px;
-  padding: 0.9rem 1.4rem;
+  justify-content: space-between;
 
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
+  padding: 1rem 0;
 
-  color: var(--color-text);
+  color: var(--color-text-muted);
+
+  font-size: 0.85rem;
+
   text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 600;
+
+  border-bottom: 1px solid var(--color-border);
 
   transition:
-    background-color 0.2s ease,
-    border-color 0.2s ease,
-    transform 0.2s ease;
+    color 0.2s ease,
+    padding-left 0.2s ease;
+}
+
+.contact__links a:first-child {
+  border-top: 1px solid var(--color-border);
 }
 
 .contact__links a:hover {
-  background-color: var(--color-surface);
-  border-color: #404040;
-  transform: translateY(-2px);
+  padding-left: 0.5rem;
+
+  color: var(--color-primary-light);
 }
 
-@media (max-width: 768px) {
+.contact__links span {
+  font-size: 1rem;
+}
+
+@media (max-width: 700px) {
   .contact {
-    width: 100%;
     padding: 6rem 1.25rem;
   }
 
-  .contact__container {
-    width: 100%;
-    max-width: 100%;
-  }
+  .contact__content {
+    grid-template-columns: 1fr;
 
-  .contact__header {
-    width: 100%;
-    max-width: 100%;
+    gap: 3rem;
   }
 
   .contact__title {
-    max-width: 100%;
-    font-size: clamp(3rem, 14vw, 4.5rem);
+    font-size: clamp(2.8rem, 13vw, 4.5rem);
   }
 
   .contact__description {
-    max-width: 100%;
     font-size: 1rem;
-    line-height: 1.75;
-  }
-
-  .contact__links {
-    flex-direction: column;
-  }
-
-  .contact__links a {
-    width: 100%;
   }
 }

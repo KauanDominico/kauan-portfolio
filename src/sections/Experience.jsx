@@ -1,102 +1,164 @@
 import './Experience.css'
 
 function Experience() {
-  const experiences = [
-    {
-  period: '2026 — Atual',
-  company: 'i_mais',
-  role: 'Suporte Técnico N1',
-  description:
-    'Atuação com atendimento e suporte técnico a clientes, diagnóstico de problemas de conectividade, configuração de roteadores, suporte remoto e acompanhamento de chamados.',
-  skills: [
-    'Suporte Técnico N1',
-    'Diagnóstico de problemas',
-    'Conectividade',
-    'Configuração de roteadores',
-    'Suporte remoto',
-    'Atendimento ao cliente',
-    'Automação de atendimento',
-  ],
-},
-    {
-      period: '2023 — 2026',
-      company: 'Grupo Bringel',
-      role: 'Analista de Sistemas',
-      description:
-        'Atuação em projetos de implantação e evolução de sistemas, realizando levantamento de requisitos, entendimento de processos, testes, documentação, treinamento e suporte aos clientes.',
-      skills: [
-        'Levantamento de requisitos',
-        'Implantação de sistemas',
-        'Testes e homologação',
-        'Documentação',
-        'Treinamento',
-        'Suporte ao cliente',
-      ],
-    },
-    {
-      period: '2025',
-      company: 'R2DA',
-      role: 'Estagiário de Tecnologia',
-      description:
-        'Atuação com levantamento e análise de requisitos para sistemas, apoiando a documentação de necessidades e validação de soluções.',
-      skills: [
-        'Requisitos',
-        'Análise de sistemas',
-        'Documentação',
-        'Validação',
-      ],
-    },
-    {
-      period: 'Experiência anterior',
-      company: 'SEDA-AM',
-      role: 'Jovem Aprendiz',
-      description:
-        'Atuação com testes de desempenho e usabilidade, suporte a usuários e atividades relacionadas à manutenção e configuração de computadores.',
-      skills: [
-        'Testes',
-        'Suporte',
-        'Hardware',
-        'Usabilidade',
-      ],
-    },
-  ]
-
   return (
     <section id="experiencia" className="experience">
       <div className="experience__container">
+
         <div className="experience__header">
-          <p className="experience__eyebrow">Experiência</p>
+          <p className="experience__eyebrow">
+            02 / Experiências
+          </p>
 
           <h2 className="experience__title">
-            Experiência profissional
+            Experiências
+            <span> Profissionais </span>
           </h2>
         </div>
 
-        <div className="experience__list">
-          {experiences.map((experience) => (
-            <article
-              className="experience__item"
-              key={`${experience.company}-${experience.role}`}
-            >
-              <div className="experience__period">
-                {experience.period}
-              </div>
+        <div className="experience__timeline">
 
-              <div className="experience__content">
-                <h3>{experience.role}</h3>
-                <h4>{experience.company}</h4>
+          <article className="experience__item">
+            <div className="experience__marker" />
 
-                <p>{experience.description}</p>
+            <div className="experience__content">
+              <div className="experience__top">
+                <div>
+                  <p className="experience__company">
+                    i_mais
+                  </p>
 
-                <div className="experience__skills">
-                  {experience.skills.map((skill) => (
-                    <span key={skill}>{skill}</span>
-                  ))}
+                  <h3 className="experience__role">
+                    Operador de Atendimento ao Cliente Jr
+                  </h3>
                 </div>
+
+                <span className="experience__period">
+                  Atual
+                </span>
               </div>
-            </article>
-          ))}
+
+              <p className="experience__description">
+                Atendimento e suporte a clientes, resolução de problemas,
+                registro e acompanhamento de chamados e orientação durante
+                processos de atendimento.
+              </p>
+
+              <div className="experience__tags">
+                <span>Atendimento</span>
+                <span>Suporte</span>
+                <span>Resolução de problemas</span>
+              </div>
+            </div>
+          </article>
+
+          <article className="experience__item">
+            <div className="experience__marker" />
+
+            <div className="experience__content">
+              <div className="experience__top">
+                <div>
+                  <p className="experience__company">
+                    Grupo Bringel / SISCME
+                  </p>
+
+                  <h3 className="experience__role">
+                    Analista de Sistemas
+                  </h3>
+                </div>
+
+                <span className="experience__period">
+                  2023 — 2026
+                </span>
+              </div>
+
+              <p className="experience__description">
+                Atuação com levantamento e análise de requisitos,
+                parametrização e implantação de sistemas, homologação,
+                testes, documentação, acompanhamento de projetos,
+                relacionamento com clientes e suporte às equipes.
+              </p>
+
+              <div className="experience__tags">
+                <span>Requisitos</span>
+                <span>Projetos</span>
+                <span>Jira</span>
+                <span>Testes</span>
+                <span>Implantação</span>
+              </div>
+            </div>
+          </article>
+
+          <article className="experience__item">
+            <div className="experience__marker" />
+
+            <div className="experience__content">
+              <div className="experience__top">
+                <div>
+                  <p className="experience__company">
+                    R2DA
+                  </p>
+
+                  <h3 className="experience__role">
+                    Estagiário de Tecnologia
+                  </h3>
+                </div>
+
+                <span className="experience__period">
+                  2025
+                </span>
+              </div>
+
+              <p className="experience__description">
+                Apoio no levantamento de requisitos para sistemas de
+                cartórios, análise de necessidades e revisão de resultados
+                de soluções de extração e reconhecimento de informações.
+              </p>
+
+              <div className="experience__tags">
+                <span>Requisitos</span>
+                <span>Análise</span>
+                <span>Testes</span>
+              </div>
+            </div>
+          </article>
+
+          <article className="experience__item">
+            <div className="experience__marker" />
+
+            <div className="experience__content">
+              <div className="experience__top">
+                <div>
+                  <p className="experience__company">
+                    Samsung
+                  </p>
+
+                  <h3 className="experience__role">
+                    Jovem Aprendiz
+                  </h3>
+                </div>
+
+                <span className="experience__period">
+                  —
+                </span>
+              </div>
+
+              <p className="experience__description">
+                Atuação com testes de desempenho e usabilidade, suporte
+                técnico, instalação e formatação do Windows, configuração
+                de periféricos e manutenção básica de computadores.
+              </p>
+
+              <div className="experience__tags">
+                <span>Testes</span>
+                <span>Suporte</span>
+                <span>Hardware</span>
+              </div>
+            </div>
+          </article>
+
         </div>
+
       </div>
     </section>
   )
