@@ -18,14 +18,18 @@ function Contact() {
         </div>
 
         <div className="contact__links">
-          <a href="mailto:kauandominico2909@gmail.com">
+          <a
+            href="mailto:kauandominico2909@gmail.com"
+            aria-label="Enviar e-mail para Kauan Lopes"
+          >
             E-mail
           </a>
 
           <a
             href="https://www.linkedin.com/in/kauanlopesdesouza/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
+            aria-label="Abrir LinkedIn de Kauan Lopes"
           >
             LinkedIn
           </a>
@@ -33,7 +37,8 @@ function Contact() {
           <a
             href="https://github.com/KauanDominico"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
+            aria-label="Abrir GitHub de Kauan Lopes"
           >
             GitHub
           </a>

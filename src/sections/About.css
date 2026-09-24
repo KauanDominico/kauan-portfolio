@@ -10,8 +10,8 @@
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 5rem;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 6rem;
 }
 
 .about__header {
@@ -19,23 +19,23 @@
 }
 
 .about__eyebrow {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 
   color: var(--color-text-muted);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.18em;
 }
 
 .about__title {
   width: 100%;
-  max-width: 500px;
+  max-width: 480px;
 
   color: var(--color-text);
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  line-height: 1.05;
-  letter-spacing: -0.03em;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
   overflow-wrap: break-word;
 }
 
@@ -46,13 +46,15 @@
   flex-direction: column;
   gap: 1.5rem;
 
+  padding-top: 0.5rem;
+
   color: var(--color-text-muted);
   font-size: 1.05rem;
-  line-height: 1.8;
+  line-height: 1.85;
 }
 
 .about__content p {
-  max-width: 100%;
+  max-width: 680px;
   overflow-wrap: break-word;
 }
 
@@ -66,9 +68,7 @@
     width: 100%;
     max-width: 100%;
 
-    display: grid;
     grid-template-columns: minmax(0, 1fr);
-
     gap: 2.5rem;
   }
 
@@ -79,6 +79,9 @@
 
   .about__content {
     width: 100%;
+    padding-top: 0;
+
     font-size: 1rem;
+    line-height: 1.8;
   }
 }

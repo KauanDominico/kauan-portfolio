@@ -18,10 +18,10 @@
   margin-bottom: 1rem;
 
   color: var(--color-text-muted);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.18em;
 }
 
 .projects__title {
@@ -31,7 +31,7 @@
   color: var(--color-text);
   font-size: clamp(2rem, 4vw, 3.5rem);
   line-height: 1.05;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.04em;
   overflow-wrap: break-word;
 }
 
@@ -45,7 +45,7 @@
 
 .project-card {
   min-width: 0;
-  padding: 2rem;
+  padding: 2.25rem;
 
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -53,16 +53,18 @@
 
   transition:
     transform 0.2s ease,
-    border-color 0.2s ease;
+    border-color 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .project-card:hover {
   transform: translateY(-4px);
+  background-color: var(--color-surface-light);
   border-color: #404040;
 }
 
 .project-card__category {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 
   color: var(--color-text-muted);
   font-size: 0.8rem;
@@ -73,11 +75,12 @@
 }
 
 .project-card__title {
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
 
   color: var(--color-text);
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   line-height: 1.2;
+  letter-spacing: -0.02em;
   overflow-wrap: break-word;
 }
 
