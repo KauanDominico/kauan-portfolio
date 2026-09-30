@@ -49,7 +49,10 @@ function Hero() {
 
           <div className="hero__photo">
             <div className="hero__photo-placeholder">
-              <span>KL</span>
+              <img
+                src="/src/assets/kauan.jpg"
+                alt="Kauan Lopes"
+              />
             </div>
           </div>
 
