@@ -1,3 +1,4 @@
+import kauanPhoto from '../assets/kauan.jpg'
 import './Hero.css'
 
 function Hero() {
@@ -50,7 +51,7 @@ function Hero() {
           <div className="hero__photo">
             <div className="hero__photo-placeholder">
               <img
-                src="/src/assets/kauan.jpg"
+                src={kauanPhoto}
                 alt="Kauan Lopes"
               />
             </div>
