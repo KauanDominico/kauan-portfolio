@@ -37,25 +37,28 @@ function Projects() {
 
             <div className="project-card__body">
               <p className="project-card__category">
-                Aplicação Web
+                Produto Digital
               </p>
 
               <h3 className="project-card__title">
-                Projeto em destaque
+                Onflow
               </h3>
 
               <p className="project-card__description">
-                Projeto desenvolvido para demonstrar a aplicação prática
-                de tecnologia, organização de informações e construção de
-                uma experiência digital funcional.
+                Solução voltada à otimização do processo de onboarding e da
+                jornada dos primeiros 90 dias de integração. Atuação no ciclo
+                completo do projeto, desde o levantamento de requisitos e
+                desenho de processos até a definição de regras, documentação,
+                viabilidade e desenvolvimento.
               </p>
             </div>
 
             <div className="project-card__footer">
               <div className="project-card__tags">
-                <span>React</span>
-                <span>JavaScript</span>
-                <span>CSS</span>
+                <span>Requisitos</span>
+                <span>Processos</span>
+                <span>Next.js</span>
+                <span>Supabase</span>
               </div>
 
               <span className="project-card__arrow">
@@ -71,29 +74,33 @@ function Projects() {
               </span>
 
               <span className="project-card__status">
-                Em desenvolvimento
+                Projeto profissional
               </span>
             </div>
 
             <div className="project-card__body">
               <p className="project-card__category">
-                Sistema
+                Sistema de Gestão
               </p>
 
               <h3 className="project-card__title">
-                Projeto em desenvolvimento
+                SISCME
               </h3>
 
               <p className="project-card__description">
-                Solução criada para praticar análise, estruturação de
-                funcionalidades e desenvolvimento de sistemas.
+                Atuação na evolução do SISCME, participando do levantamento
+                e análise de requisitos, parametrização, implantação, testes,
+                homologação, documentação e acompanhamento das demandas junto
+                às equipes envolvidas.
               </p>
             </div>
 
             <div className="project-card__footer">
               <div className="project-card__tags">
-                <span>JavaScript</span>
-                <span>API</span>
+                <span>Requisitos</span>
+                <span>Implantação</span>
+                <span>Testes</span>
+                <span>Homologação</span>
               </div>
 
               <span className="project-card__arrow">
@@ -109,7 +116,50 @@ function Projects() {
               </span>
 
               <span className="project-card__status">
-                Planejado
+                Projeto profissional
+              </span>
+            </div>
+
+            <div className="project-card__body">
+              <p className="project-card__category">
+                Sistema
+              </p>
+
+              <h3 className="project-card__title">
+                Sistema de Proposta Comercial
+              </h3>
+
+              <p className="project-card__description">
+                Participação no desenvolvimento de um sistema voltado à
+                gestão de propostas comerciais, atuando no levantamento de
+                requisitos, reuniões de alinhamento, acompanhamento das
+                demandas, definição de funcionalidades e gestão das
+                integrações necessárias.
+              </p>
+            </div>
+
+            <div className="project-card__footer">
+              <div className="project-card__tags">
+                <span>Requisitos</span>
+                <span>Projetos</span>
+                <span>Integrações</span>
+                <span>Homologação</span>
+              </div>
+
+              <span className="project-card__arrow">
+                ↗
+              </span>
+            </div>
+          </article>
+
+          <article className="project-card">
+            <div className="project-card__top">
+              <span className="project-card__number">
+                04
+              </span>
+
+              <span className="project-card__status">
+                Em desenvolvimento
               </span>
             </div>
 
@@ -119,19 +169,23 @@ function Projects() {
               </p>
 
               <h3 className="project-card__title">
-                Próximo projeto
+                Portfólio Pessoal
               </h3>
 
               <p className="project-card__description">
-                Um novo projeto pensado para explorar conceitos de produto,
-                experiência do usuário e desenvolvimento de soluções.
+                Projeto desenvolvido para apresentar minha experiência
+                profissional, projetos e atuação em Tecnologia da Informação,
+                unindo organização de conteúdo, experiência do usuário e
+                desenvolvimento de uma aplicação web.
               </p>
             </div>
 
             <div className="project-card__footer">
               <div className="project-card__tags">
-                <span>UX</span>
-                <span>Web</span>
+                <span>React</span>
+                <span>Vite</span>
+                <span>JavaScript</span>
+                <span>CSS</span>
               </div>
 
               <span className="project-card__arrow">

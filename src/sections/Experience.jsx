@@ -29,7 +29,7 @@ function Experience() {
                   </p>
 
                   <h3 className="experience__role">
-                    Operador de Atendimento ao Cliente Jr
+                    Suporte N1
                   </h3>
                 </div>
 
@@ -39,15 +39,16 @@ function Experience() {
               </div>
 
               <p className="experience__description">
-                Atendimento e suporte a clientes, resolução de problemas,
-                registro e acompanhamento de chamados e orientação durante
-                processos de atendimento.
+                Atuação em suporte técnico N1, realizando diagnóstico e
+                resolução de problemas relacionados à conectividade e
+                configuração de equipamentos, além de registro e
+                acompanhamento de chamados e suporte remoto.
               </p>
 
               <div className="experience__tags">
-                <span>Atendimento</span>
-                <span>Suporte</span>
-                <span>Resolução de problemas</span>
+                <span>Suporte N1</span>
+                <span>Conectividade</span>
+                <span>Suporte remoto</span>
               </div>
             </div>
           </article>
@@ -59,7 +60,7 @@ function Experience() {
               <div className="experience__top">
                 <div>
                   <p className="experience__company">
-                    Grupo Bringel / SISCME
+                    Grupo Bringel
                   </p>
 
                   <h3 className="experience__role">
@@ -73,18 +74,22 @@ function Experience() {
               </div>
 
               <p className="experience__description">
-                Atuação com levantamento e análise de requisitos,
-                parametrização e implantação de sistemas, homologação,
-                testes, documentação, acompanhamento de projetos,
-                relacionamento com clientes e suporte às equipes.
+                Atuação em diferentes projetos e sistemas, participando
+                desde o entendimento das necessidades do negócio até o
+                acompanhamento do desenvolvimento e entrega das soluções.
+                Experiência com levantamento de requisitos, reuniões de
+                alinhamento, acompanhamento de demandas, gestão de
+                integrações, testes e homologação. Entre os projetos,
+                atuação no desenvolvimento e evolução de sistemas de
+                proposta comercial e do SISCME.
               </p>
 
               <div className="experience__tags">
                 <span>Requisitos</span>
                 <span>Projetos</span>
-                <span>Jira</span>
+                <span>Integrações</span>
                 <span>Testes</span>
-                <span>Implantação</span>
+                <span>Jira</span>
               </div>
             </div>
           </article>

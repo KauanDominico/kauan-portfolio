@@ -85,6 +85,8 @@
   font-size: 1.15rem;
 
   line-height: 1.9;
+
+  text-align: justify;
 }
 
 .about__stats {
@@ -170,6 +172,8 @@
     font-size: 1rem;
 
     line-height: 1.8;
+
+    text-align: justify;
   }
 
   .about__stats {
